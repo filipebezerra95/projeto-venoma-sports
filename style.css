@@ -122,6 +122,10 @@ a:hover {
 /* =========================
    SEARCH / ICON BUTTONS
    ========================= */
+
+.button-nav {
+  display: flex;
+}
 .input-search {
   width: 226px;
   height: 53px;
@@ -697,19 +701,20 @@ footer {
 }
 
 /* ===== Media Query específico - iPhone XR (largura 414px) ===== */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 614px) {
   /* body / geral */
   body {
     width: 100vw;
     overflow-x: hidden;
-    padding: 0;
+    padding: 0 ;
   }
 
   /* header */
   header {
-    padding: 12px 0;
+    padding: 12px 20px;
     height: auto;
     align-items: center;
+    
     gap: 8px;
   }
 
@@ -743,7 +748,7 @@ footer {
     display: flex;
     gap: 5px;
     align-items: center;
-    margin-right: 30vw;
+    margin-left: 20vw;
   }
 
   .input-search {
@@ -790,6 +795,7 @@ footer {
     margin-top: 16px;
     height: auto;
     text-wrap: balance;
+    margin-left: 10vw;
   }
 
   .buttons {
@@ -807,7 +813,7 @@ footer {
   }
 
   .wv {
-    margin: 0;
+    margin: 0 0px 0 50px;
     font-size: 14px;
   }
 
@@ -824,11 +830,11 @@ footer {
     margin: 12px 0;
     z-index: -3;
     display: block;
-    width: 70%;
+    width: 100vw;
   }
 
   .img-bg {
-    width: 75vw;
+    width: 100vw;
     height: 52vh;
     max-height: 60vh;
     object-fit: cover;
@@ -837,7 +843,7 @@ footer {
   .man-run {
     position: absolute;
     top: 25vh;
-    left: 26vw;
+    left: 39vw;
 
     height: 28vh;
     max-height: 40vh;
@@ -855,8 +861,9 @@ footer {
   /* COLLECTION */
   .collection-explorer {
     margin-top: 48px;
-    width: 80vw;
-    padding-left: 0px;
+    
+    width:100vw;
+    padding-left: 10vw;
   }
 
   .title-colection {
@@ -916,7 +923,7 @@ footer {
   .shop {
     width: 100%;
     margin: 18px 0;
-    padding-left: 0px;
+    padding-left: 10vw;
   }
 
   .card-shop {
@@ -953,9 +960,10 @@ footer {
   /* ATHLETICS */
   .athletics {
     position: relative;
-    width: 75vw;
+    width: 100vw;
     height: auto;
-    padding: 32px 0;
+    padding-top: 32px;
+    padding-bottom:32px ;
     background-position: center;
     background-size:cover;
    background: linear-gradient(160deg, #225c22 0%, #1f451f 30%, #1a361a 65%, #0e1f0e 100%);
@@ -997,21 +1005,21 @@ footer {
   /* ABOUT */
   .about-us {
     flex-direction: column;
-    padding: 10px 0;
+    padding: 10px 15vw;
     gap: 18px;
     height: 70vh;
   }
 
   .title-about {
     font-size: 28px;
-    width: 70%;
+    width: 100%;
     height: auto;
     top: 10px;
     
   }
 
   .our-story{
-    width: 70%;
+    width: 100%;
     margin-left: 2vw;
     padding: 0;
     margin-top: 5px;
@@ -1031,7 +1039,7 @@ footer {
 
   /* BROWSER / CTA */
   .browser {
-    width: 74vw;
+    width: 100vw;
     height: auto;
     padding: 20px 0;
     margin-bottom: 0;
@@ -1044,7 +1052,7 @@ footer {
   }
 
   .browse-collection {
-    width: 120px;
+    width: 35vw;
     
     padding: 0 16px;
     margin: 12px auto 0 auto;
