@@ -25,9 +25,9 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-  padding-left: 120px;
-  padding-right: 120px;
-  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-around;
 }
 
 .logo-box {
@@ -103,7 +103,7 @@ nav {
   font-family: poppins;
   font-size: 26px;
   gap: 94px;
-  margin-left: 252px;
+  margin-left: 100px;
 }
 
 a {
@@ -125,6 +125,7 @@ a:hover {
 
 .button-nav {
   display: flex;
+  flex-direction: row;
 }
 .input-search {
   width: 226px;
@@ -762,6 +763,13 @@ footer {
     margin: 0;
   }
 
+  .button-like:hover,
+  .button-cart:hover {
+    width: none;
+    height: none;
+    transition: none;
+  }
+
   /* hero / seção principal */
   section {
     margin: 16px 0 48px 0;
@@ -1008,6 +1016,8 @@ footer {
     padding: 10px 15vw;
     gap: 18px;
     height: 80vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .title-about {
